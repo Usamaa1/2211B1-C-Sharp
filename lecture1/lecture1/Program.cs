@@ -206,7 +206,7 @@ nums[2, 1] = 80;*/
 
 /* JAGGED ARRAY */
 
-int[][] nums =
+/*int[][] nums =
 {
     new int[] { 1, 2, 3 },
     new int[] { 4, 5,},
@@ -219,9 +219,103 @@ foreach(var item in nums)
     {
         Console.WriteLine(n);
     }
+}*/
+
+
+
+/*int[] nums = new int[5];
+
+nums[0] = 1;
+nums[1] = 2;
+nums[2] = 3;
+nums[3] = 4;
+nums[4] = 5;*/
+//nums[5] = 6;
+//nums[6] = 7;
+//nums[7] = 8;
+
+/*foreach (int i in nums)
+{
+    Console.WriteLine(i);
+}*/
+
+
+//LIST Starts from here
+
+/*
+List<int> nums = new();
+
+
+nums.Add(1);
+nums.Add(2);
+nums.Add(3);
+nums.Add(4);
+nums.Add(5);
+nums.Add(6);
+nums.Add(7);
+nums.Add(8);
+nums.Add(9);
+nums.Add(10);
+nums.Add(7);
+
+nums.Clear();
+nums.Remove(8);
+Console.WriteLine(nums.Contains(8));
+Console.WriteLine("Count: "+nums.Count());
+Console.WriteLine($"index of: {nums.IndexOf(7)}");
+Console.WriteLine($"Last index of: {nums.LastIndexOf(7)}");
+
+nums.Reverse();
+nums.Sort();
+
+
+
+foreach (int i in nums)
+{
+    Console.WriteLine(i);
+}*/
+
+//LIST Ends here
+
+//Classes Starts from here
+
+
+
+
+
+/*Car alto = new();
+
+alto.name = "Alto VXR";
+alto.model = 2023;
+alto.brand = "Suzuki";
+alto.airBags = "Yes";
+alto.automatic = "Yes";*/
+
+
+Car alto = new()
+{
+    name = "Alto VXR",
+    model = 2014,
+    brand = "Suzuki",
+    airBags = "No",
+    automatic = "No"
+};
+
+Console.WriteLine($"{alto.name} {alto.model} {alto.brand} {alto.airBags} {alto.automatic}");
+
+Console.ReadKey();
+
+class Car
+{
+    public string name;
+    public string brand;
+    public int model;
+    public string airBags;
+    public string automatic;
 }
 
 
+//Classes Ends here
 
 
 
@@ -234,4 +328,20 @@ foreach(var item in nums)
 
 
 
-Console.ReadKey();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
