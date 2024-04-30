@@ -292,33 +292,284 @@ alto.airBags = "Yes";
 alto.automatic = "Yes";*/
 
 
-Car alto = new()
-{
-    name = "Alto VXR",
-    model = 2014,
-    brand = "Suzuki",
-    airBags = "No",
-    automatic = "No"
-};
+//Car alto = new()
+//{
+//    name = "Alto VXR",
+//    model = 2014,
+//    brand = "Suzuki",
+//    airBags = "No",
+//    automatic = "No"
+//};
 
-Console.WriteLine($"{alto.name} {alto.model} {alto.brand} {alto.airBags} {alto.automatic}");
+//Car alto = new("Alto VXR","Suzuki","No","Yes");
+//Car mehran = new Car("Mehran special Edition", "Suzuki",2020, "No","Yes");
+//Car city = new("City Aspire", "Honda", 2023, "Yes", "Yes");
 
-Console.ReadKey();
+////Console.WriteLine($" Car Name: {alto.name}\n Model: {alto.model}\n Brand: {alto.brand}\n Airbags: {alto.airBags}\n Automatic: {alto.automatic}");
+////Console.WriteLine($" Car Name: {mehran.name}\n Model: {mehran.model}\n Brand: {mehran.brand}\n Airbags: {mehran.airBags}\n Automatic: {mehran.automatic}");
 
-class Car
-{
-    public string name;
-    public string brand;
-    public int model;
-    public string airBags;
-    public string automatic;
-}
+//Console.WriteLine(city.printCar());
+////Console.WriteLine(alto.printCar());
+////Console.WriteLine(mehran.printCar());
+
+//Console.WriteLine($"Price: ${city.carPrice(450) + 50}");
+////city.carPrice(450);
+
+//Console.ReadKey();
+
+//class Car
+//{
+//    public string name;
+//    public string brand;
+//    public int model;
+//    public string airBags;
+//    public string automatic;
+
+//    public Car(string carName, string carBrand, int carModel, string carAirBags, string carAutomatic)
+//    {
+//        this.name = carName;
+//        this.brand = carBrand;
+//        this.model = carModel;
+//        this.airBags = carAirBags;
+//        this.automatic = carAutomatic;
+//    }
+
+//    public Car(string carName, string carBrand, string carAirBags, string carAutomatic)
+//    {
+//        this.name = carName;
+//        this.brand = carBrand;
+//        this.airBags = carAirBags;
+//        this.automatic = carAutomatic;
+//    }
+
+//    //public void printCar()
+//    //{
+//    //    Console.WriteLine($" Car Name: {this.name}\n Model: {this.model}\n Brand: {this.brand}\n Airbags: {this.airBags}\n Automatic: {this.automatic}");
+//    //}
+//    public string printCar()
+//    {
+//       return $" Car Name: {this.name}\n Model: {this.model}\n Brand: {this.brand}\n Airbags: {this.airBags}\n Automatic: {this.automatic}";
+//    }
+
+//    public int carPrice(int price)
+//    {
+//        return price + 100;
+//    }
+
+//    //public void carPrice(int price)
+//    //{
+//    //    Console.WriteLine(price + 100);
+//    //}
+
+
+
+//}
 
 
 //Classes Ends here
 
 
+//CLASSES
 
+
+/*
+ -POLYMORPHISM
+ -ENCAPSULATION
+ -ABSTRACTION
+ -INHERITANCE
+*/
+
+//INHERITANCE
+//grandfather -> father -> child
+
+//UbisoftGame farCry = new()
+//{
+//    gameName = "Far Cry 6",
+//    gameVersion = 6.5,
+//    companyName = "Ubisoft",
+//    players = 4,
+
+//};
+//farCry.nextGameLaunchText("On next thursday of Jan 2025");
+
+//Console.WriteLine(farCry.printInfo());
+
+//Console.WriteLine(farCry.gameName);
+
+
+
+//RockstarGame GTA = new()
+//{
+//    gameName = "GTA 5",
+//    gameVersion = 5.3,
+//    companyName = "Rockstar",
+//    players = 1
+//};
+//Console.WriteLine(GTA.printInfo());
+
+//Game a = new()
+//{
+//    gameName = "A",
+//    gameVersion = 1,
+//    companyName = "AAA",
+//    players = 2,
+//};
+
+//Console.WriteLine(a.printInfo());
+
+
+
+//class Game
+//{
+//    public string gameName;
+//    public double gameVersion;
+//    public int players;
+//    public string companyName;
+//    //private string nextGameLaunch = "";
+//    protected string nextGameLaunch;
+
+//    //Polymorphism ---> many forms
+//    public virtual string printInfo()
+//    {
+//        return "Here will be the text message from objects properties";
+//    }
+//}
+
+
+//class UbisoftGame : Game
+//{
+//   public void nextGameLaunchText(string arg)
+//    {
+//        this.nextGameLaunch = arg;
+//    }
+//    //Polymorphism ---> many forms
+//    public override string printInfo()
+//    {
+//        return $"Game Name: {this.gameName} \nCompany Name: {this.companyName} \nGame Version: {this.gameVersion} \nPlayers: {this.players} \nNext Game Launch: {this.nextGameLaunch} \n\n";
+//    }
+//}
+
+//class RockstarGame : UbisoftGame
+//{
+//    //Polymorphism ---> many forms
+//    public override string printInfo()
+//    {
+//        return $"Game Name: {this.gameName} \nCompany Name: {this.companyName} \nGame Version: {this.gameVersion} \nPlayers: {this.players} \nNext Game Launch: {this.nextGameLaunch} \n\n ---- The Information Ends here";
+//    }
+//}
+
+
+
+
+// ENCAPSULATION
+
+
+//Bank asfar = new()
+//{
+//    accountHolder = "Asfar Amjad",
+//    accountNumber = 18983249839
+//};
+
+
+//asfar.setAccountBalance(56000);
+//asfar.passCodeReset(5678);
+//asfar.printAccount();
+
+//asfar.passCodeReset(4522);
+
+//asfar.printAccount();
+
+
+//Console.WriteLine("");
+//Console.WriteLine(asfar.accountHolder);
+//Console.WriteLine(asfar.passCode);
+
+
+
+//class Bank
+//{
+//    public string accountHolder;
+//    public double accountNumber;
+//    private int passCode;
+//    private int accountBalance;
+
+
+//    public void passCodeReset(int newPassCode)
+//    {
+//        this.passCode = newPassCode;
+//    }
+
+//    public void seeAccountBalance()
+//    {
+//        Console.WriteLine(this.accountBalance);
+//    }
+//    public void setAccountBalance(int newBalance)
+//    {
+//        this.accountBalance = newBalance;
+//    }
+
+//    public void printAccount()
+//    {
+//        Console.WriteLine($"Account Holder: {this.accountHolder}");
+//        Console.WriteLine($"Account Number: {this.accountNumber}");
+//        Console.WriteLine($"Account Balance: {this.accountBalance}");
+//        Console.WriteLine($"Passcode: {this.passCode}");
+//    }
+
+
+//}
+
+
+//ABSTRACTION
+
+
+
+AlfalahBank Haris = new()
+{
+    accountHolder = "Haris Naseer",
+    accountNumber = 342334233333,
+};
+
+Haris.passCodeReset(2343);
+
+Haris.printAccount();
+
+
+
+abstract class Bank
+{
+    public string accountHolder;
+    public double accountNumber;
+    protected int passCode;
+    protected int accountBalance;
+    public virtual void printAccount() { }
+    public virtual void seeAccountBalance(){ }
+    public virtual void passCodeReset(int newPassCode) { }
+    public virtual void setAccountBalance(int newBalance){ }
+
+}
+
+
+class AlfalahBank : Bank
+{
+    public override void printAccount() 
+    {
+        Console.WriteLine($"Account Holder: {this.accountHolder}");
+        Console.WriteLine($"Account Number: {this.accountNumber}");
+        Console.WriteLine($"Account Balance: {this.accountBalance}");
+        Console.WriteLine($"Passcode: {this.passCode}");
+    }
+    public override void seeAccountBalance() 
+    {
+        Console.WriteLine(this.accountBalance);
+    }
+    public override void passCodeReset(int newPassCode) 
+    {
+        this.passCode = newPassCode;
+    }
+
+
+}
 
 
 
