@@ -574,6 +574,113 @@ class AlfalahBank : Bank
 
 
 
+//INTERFACES 
+
+
+
+//MeezanBank Arif = new()
+//{
+//    accountHolder = "Arif Khan",
+//    accountBalance = 450,
+//    accountNumber = 178787787,
+//    passCode = 8998
+
+//};
+
+
+//Arif.setAccountBalance(9000);
+
+//Arif.passCodeReset(5555);
+
+//Arif.printAccount();
+
+//Arif.seeAccountBalance();
+
+
+
+
+
+
+//interface IBank
+//{
+//    void printAccount();
+//    void seeAccountBalance();
+//    void passCodeReset(int newPassCode);
+//    void setAccountBalance(int newBalance);
+//}
+
+
+
+
+//class MeezanBank : IBank
+//{
+//    public string accountHolder;
+//    public int accountNumber;
+//    public decimal accountBalance;
+//    public int passCode;
+//    public void printAccount()
+//    {
+//        Console.WriteLine($"Account Holder: {this.accountHolder}");
+//        Console.WriteLine($"Account Number: {this.accountNumber}");
+//        Console.WriteLine($"Account Balance: {this.accountBalance}");
+//        Console.WriteLine($"Passcode: {this.passCode}");
+//    }
+
+
+//    public void seeAccountBalance()
+//    {
+//        Console.WriteLine($"Account Balance: {this.accountBalance}");
+//    }
+
+
+//    public void passCodeReset(int newPassCode)
+//    {
+//        this.passCode = newPassCode;
+//    }
+//    public void setAccountBalance(int newBalance)
+//    {
+//        this.accountBalance = newBalance;
+//    }
+
+
+
+//}
+
+
+
+
+
+string[] cars = { "Mehran", "City", "Mira", "Ciaz", "Bolan" };
+
+
+int[] nums = { 45, 56, 67, 23, 65, 234, 868 };
+
+
+
+printArray(cars);
+printArray(nums);
+
+
+
+//foreach(int items in nums)
+//{
+//    Console.WriteLine(items);
+//}
+
+//foreach (string items in cars)
+//{
+//    Console.WriteLine(items);
+//}
+
+
+ void printArray<Thing>(Thing[] arrayName)
+{
+    foreach (Thing items in arrayName)
+    {
+        Console.WriteLine(items);
+    }
+
+}
 
 
 
